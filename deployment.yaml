@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: ratoloko765/flask-boilerplate_app:latest
+          image: docker.io/ratoloko765/flask-boilerplate_app:latest
           imagePullPolicy: Always
           ports:
             - name: http
