@@ -13,4 +13,8 @@ docker-compose up -d
 docker images 
 docker tag flask-boilerplate_app:latest ratoloko765/flask-boilerplate_app:latest
 docker login
-docker push ratoloko765/flask-boilerplate_app:latest
+docker push ${dockerhub_repo}/flask-boilerplate_app:latest
+
+kubectl set image -f pod.yaml flask-container01=${dockerhub_repo}/flask-boilerplate_app:latest --local -o yaml
+
+kubectl set image -f deployment.yaml flask-container01=${dockerhub_repo}/flask-boilerplate_app:latest --local -o yaml
