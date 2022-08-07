@@ -5,6 +5,6 @@ metadata:
 spec:
    containers:
    - name: flask-container01
-     image: ratoloko765/flask-boilerplate_app:latest 
+     image: ${dockerhub_repo}/flask-boilerplate_app:latest 
      ports:
      - containerPort: 5000
