@@ -32,4 +32,4 @@ def get_dly():
     return jsonify(content)
 
 if __name__ == '__main__':
-    app.run(port=5007)
+    app.run(port=5000)
